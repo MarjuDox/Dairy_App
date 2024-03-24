@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="13dp"
+        android:background="?attr/selectableItemBackground"
+        app:cardElevation="5dp"
+        android:padding="2dp"
+        android:id="@+id/notecard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/note"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notetitle"
+                    android:padding="5dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="This is your developer"
+                    android:fontFamily="@font/google_sans_medium"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:textAlignment="textStart">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/menupopbutton"
+                    android:layout_weight="0"
+                    android:src="@drawable/ic_more_vert">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="3dp"
+                android:ellipsize="end"
+                android:text="This is your code which appear hear"
+                android:textSize="14sp"
+                android:fontFamily="@font/google_sans_medium"
+                android:id="@+id/notecontent"
+                android:maxLines="12">
+
+            </TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/date_rounded"
+                android:drawableStart="@drawable/ic_outline_calendar_today_24"
+                android:drawablePadding="6dp"
+                android:drawableTint="@color/black"
+                android:ellipsize="end"
+                android:fontFamily="@font/google_sans_regular"
+                android:padding="5dp"
+                android:text="Date Time"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="12sp">
+
+            </TextView>
+        </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

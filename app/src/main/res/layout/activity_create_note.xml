@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    tools:context=".Activity.CreateNote">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="?attr/backgroundColor"
+            android:id="@+id/testthu">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarcreatenote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/backgroundColor"
+                app:title="Notes App">
+
+                <ImageView
+                    android:id="@+id/savenote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="7.5dp"
+                    android:paddingBottom="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_save"
+                    app:tint="?attr/icon_note"/>
+                <ImageView
+                    android:id="@+id/imv_Voice_Note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tint="?attr/icon_note"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="7.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/ic_voice"/>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/createtitlenote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/backgroundColor"
+                    android:hint="Enter your title here"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:includeFontPadding="false"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:paddingTop="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tvDateTimeCreate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toolbarcreatenote"
+                    android:fontFamily="@font/google_sans_regular"
+                    android:padding="15dp"
+                    android:text="Date time"
+                    android:textSize="10sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/createcontentnote"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tvDateTimeCreate"
+                    android:background="?attr/backgroundColor"
+                    android:gravity="top|left"
+                    android:hint="Enter your note content here"
+                    android:padding="15dp"
+                    android:textColor="?attr/textColor"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>

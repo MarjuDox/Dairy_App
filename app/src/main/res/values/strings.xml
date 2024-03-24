@@ -1,0 +1,34 @@
+<resources>
+    <string name="facebook_app_id">433524944992558</string>
+    <string name="fb_login_protocol_scheme">fb433524944992558</string>
+
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+
+    <string name="app_name">Diary App</string>
+    <string name="my_notes">My Notes</string>
+    <string name="search_here">Search here....</string>
+    <string name="clear">clear</string>
+    <string name="no_data">no_data</string>
+    <string name="add_note">Add Note</string>
+    <string name="choose_color">Choose Color</string>
+    <string name="edited_on">Edited on: %1$s</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="app_theme">App Theme</string>
+    <string name="dark_or_light_mode">Light or Dark Mode</string>
+    <string name="notifications">Reminder</string>
+    <string name="schedule">Set time to send notification</string>
+    <string name="share">Share</string>
+    <string name="passCode">Lock Screen</string>
+    <string name="school">Ton Duc Thang University</string>
+    <string name="student1">Nguyễn Thanh Sơn</string>
+    <string name="mssv1">51900200</string>
+    <string name="student2">Phạm Hùng Nghĩa</string>
+    <string name="mssv2">51900145</string>
+    <string name="student3">Mai Văn Ngọc</string>
+    <string name="mssv3">51900147</string>
+    <string name="rateApp">Rate App</string>
+    <string name="love_this_app">Love this app? Let us Know in the Google Play Store how we can make it even better</string>
+    <string name="version">1.0</string>
+    <string name="versionApp">Version</string>
+</resources>

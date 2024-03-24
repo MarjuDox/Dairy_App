@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Function">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/home"
+                    android:title="Home"
+                    android:icon="@drawable/ic_home">
+                </item>
+                <item android:id="@+id/colorPicker"
+                    android:title="Theme"
+                    android:icon="@drawable/ic_theme">
+                </item>
+                <item android:id="@+id/recycle_bin"
+                    android:title="Recycle Bin"
+                    android:icon="@drawable/ic_delete_light">
+
+                </item>
+                <item android:id="@+id/setting"
+                    android:title="Setting"
+                    android:icon="@drawable/ic_baseline_settings_24">
+                </item>
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/about"
+        android:title="About"
+        android:icon="@drawable/ic_nfo"/>
+    <item android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout"/>
+</menu>
